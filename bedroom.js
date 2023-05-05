@@ -1,15 +1,15 @@
 function preload()
 {
-    img = loadImage('/Images/Bedroom.jpg');
+    img = loadImage('Bedroom.jpg');
 }
 
 function setup(){
-    canvas = createCanvas(380, 380);
+    canvas = createCanvas(420, 380);
     canvas.center();
 
     video = createCapture(VIDEO);
     video.hide();
-    video.size(380, 380);
+    video.size(420, 380);
 
     objectDetector = ml5.objectDetector('cocossd', modelLoaded);
 }
@@ -21,5 +21,5 @@ function modelLoaded()
 
 function draw()
 {
-image(img, 0, 0, 380, 380);
+image(img, 0, 0, 420, 380);
 }
